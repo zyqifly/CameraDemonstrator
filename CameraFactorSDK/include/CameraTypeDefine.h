@@ -11,6 +11,7 @@ namespace CameraFactoryNS
 		Default = 0x00,
 		Hikvision = 0x01,
 		Fotric = 0x02,
+		Balser = 0x03, 
 		Check = 0xff
 
 	};
@@ -19,6 +20,7 @@ namespace CameraFactoryNS
 		Default = 0x00 << 8,
 		IRVision = 0x01 << 8,
 		XF = 0x02 << 8,
+		ACA = 0x03 << 8, 
 		Check = 0xff << 8
 	};
 	enum class CAMERA_FACTORY_API CameraInterface :CameraEnumTypeDefine
@@ -45,6 +47,7 @@ namespace CameraFactoryNS
 	{
 		Camera_Type_Default = 0x0000,
 		Camera_Type_Hikvision_XF_GigE_Infrare = (int)CameraProductor::Hikvision | (int)CameraSeries::XF| (int)CameraInterface::GigE| (int)CameraColour::Infrare,
-		Camera_Type_Fotric_IRVision_GigE_Infrera= (int)CameraProductor::Fotric| (int)CameraSeries::IRVision| (int)CameraInterface::GigE| (int)CameraColour::Infrare
+		Camera_Type_Fotric_IRVision_GigE_Infrera= (int)CameraProductor::Fotric| (int)CameraSeries::IRVision| (int)CameraInterface::GigE| (int)CameraColour::Infrare,
+		Camera_Type_Balser_ACA_GigE_Grey=(int)CameraProductor::Balser| (int)CameraSeries::ACA| (int)CameraInterface::GigE| (int)CameraColour::Grey
 	};
 }
