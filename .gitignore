@@ -32,3 +32,12 @@ TEST/out/
 TEST/.vs/
 build-CameraDemonstrator-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/
 CameraDemonstrator/.vs/
+CameraDemonstrator_/build-DemonstratorWidget-Desktop_Qt_5_14_0_MinGW_32_bit-Debug/
+CameraDemonstrator_/DemonstratorWidget/.vs/
+CameraDemonstrator_/DemonstratorWidget/debug/
+CameraDemonstrator_/DemonstratorWidget/release/
+CameraDemonstrator_/testImportSDK/testImportSDK/x64/
+*.sdf
+*.pdb
+*.ilk
+*.tlog
