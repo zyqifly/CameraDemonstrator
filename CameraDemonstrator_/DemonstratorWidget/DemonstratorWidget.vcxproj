@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1520B21E-0DF7-3701-A063-AE301C3E7668}</ProjectGuid>
+    <ProjectGuid>{76C1C04C-A907-388C-8417-401FA01532F8}</ProjectGuid>
     <RootNamespace>DemonstratorWidget</RootNamespace>
     <Keyword>QtVS_v303</Keyword>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
@@ -151,10 +151,9 @@
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <WarningLevel>Level3</WarningLevel>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>shell32.lib;CameraFactory_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;G:\Github\CameraDemonstrator\CameraFactorSDK\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -216,10 +215,6 @@
   <ItemGroup>
     <QtUic Include="demonstratorwidget.ui">
     </QtUic>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DemonstratorWidget.pri" />
-    <None Include="DemonstratorWidget.pro" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

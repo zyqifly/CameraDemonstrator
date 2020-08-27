@@ -4,6 +4,13 @@
 #include <QWidget>
 #include <qtimer.h>
 #include    "CameraFactory.h"
+#ifdef _DEBUG
+#pragma comment(lib,"CameraFactoryD.lib")
+#else
+#pragma comment(lib,"CameraFactory.lib")
+#endif // _DEBUG
+
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class DemonstratorWidget; }
 QT_END_NAMESPACE

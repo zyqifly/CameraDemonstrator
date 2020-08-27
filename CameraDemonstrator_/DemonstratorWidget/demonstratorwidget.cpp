@@ -53,6 +53,10 @@ void    DemonstratorWidget::displaySlot()
     //WriteBMP(data.data(), "picture.bmp", cameraAttribute.width(), cameraAttribute.height());
     QImage* img = new QImage(cameraAttribute.width(),cameraAttribute.height(),QImage::Format_BGR888);
     std::copy(data.begin(), data.end(), img->bits());
-    ui->label->setPixmap(QPixmap::fromImage(*img));
+    QImage  temp = img->mirrored(false, true);
+    /*QMatrix matrix;
+    matrix.rotate(180.0);*/
+    //temp.transformed(matrix, Qt::FastTransformation);
+    ui->label->setPixmap(QPixmap::fromImage(temp));
     delete  img;
 }
