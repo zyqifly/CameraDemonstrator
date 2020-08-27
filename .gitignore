@@ -43,3 +43,13 @@ CameraDemonstrator_/testImportSDK/testImportSDK/x64/
 *.tlog
 CameraDemonstrator_/testImportSDK/x64/Debug/picture.bmp
 CameraDemonstrator_/testImportSDK/x64/Release/picture.bmp
+CameraDemonstrator/DemonstratorWidget_QT514_VS2019/.vs/
+*.log
+CameraDemonstrator/testImportSDK/testImportSDK/picture.bmp
+*.idb
+CameraDemonstrator/testImportSDK/x64/Debug/picture.bmp
+CameraDemonstrator/testImportSDK/x64/Release/picture.bmp
+CameraDemonstrator/ViewerWidget_build/
+CameraDemonstrator/DemonstratorWidget_QT514_VS2019/debug/
+CameraDemonstrator/DemonstratorWidget_QT514_VS2019/release/
+CameraDemonstrator/testImportSDK/x64/
