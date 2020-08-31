@@ -8,7 +8,8 @@ Widget::Widget(QWidget *parent) :
     ui->setupUi(this);
 
     CameraFactoryNS::CameraAttribute    attribute;
-    attribute.setCameraAttribute(CameraFactoryNS::CameraType::Camera_Type_Balser_ACA_GigE_Grey, 1920, 1200, "21783245");
+    //attribute.setCameraAttribute(CameraFactoryNS::CameraType::Camera_Type_Balser_ACA_GigE_Grey, 1920, 1200, "21783245");
+    attribute.setCameraAttribute(CameraFactoryNS::CameraType::Camera_Type_DaHeng_MER_USB2_GRE, 1920, 1200, "RB0008008012");
     _cameraFactory.creatCamera(attribute);
     _cameraFactory.open();
     _refreshPictureTimer.start(1);
@@ -30,7 +31,7 @@ void    Widget::displaySlot()
     }
     _cameraFactory.camera()->cameraAttribute().setDisplayStatus(false);
     //[1]取出数据
-    auto& data = _cameraFactory.camera()->imageData().Data();
+    auto& data = _cameraFactory.camera()->imageData().Data_RGB();
     auto& cameraAttribute = _cameraFactory.camera()->cameraAttribute();
     int dataMinNum = cameraAttribute.height() * cameraAttribute.width() * cameraAttribute.getPixelByteNum();
     if (data.size() < dataMinNum)

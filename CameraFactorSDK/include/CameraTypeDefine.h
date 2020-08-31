@@ -11,8 +11,11 @@ namespace CameraFactoryNS
 		Default = 0x00,
 		Hikvision = 0x01,
 		Fotric = 0x02,
-		Balser = 0x03, 
+		Balser = 0x03,
+		Do3Think = 0x04,
+		DaHeng = 0x04, 
 		Check = 0xff
+		//TODO:third,增加厂家的Enum
 
 	};
 	enum class CAMERA_FACTORY_API CameraSeries :CameraEnumTypeDefine
@@ -20,8 +23,11 @@ namespace CameraFactoryNS
 		Default = 0x00 << 8,
 		IRVision = 0x01 << 8,
 		XF = 0x02 << 8,
-		ACA = 0x03 << 8, 
+		ACA = 0x03 << 8,
+		M2s = 0x04 << 8,
+		MER = 0x05,
 		Check = 0xff << 8
+		//TODO:fourth,增加厂家相机系列的Enum
 	};
 	enum class CAMERA_FACTORY_API CameraInterface :CameraEnumTypeDefine
 	{
@@ -46,8 +52,11 @@ namespace CameraFactoryNS
 	enum class CAMERA_FACTORY_API CameraType :CameraEnumTypeDefine
 	{
 		Camera_Type_Default = 0x0000,
-		Camera_Type_Hikvision_XF_GigE_Infrare = (int)CameraProductor::Hikvision | (int)CameraSeries::XF| (int)CameraInterface::GigE| (int)CameraColour::Infrare,
-		Camera_Type_Fotric_IRVision_GigE_Infrera= (int)CameraProductor::Fotric| (int)CameraSeries::IRVision| (int)CameraInterface::GigE| (int)CameraColour::Infrare,
-		Camera_Type_Balser_ACA_GigE_Grey=(int)CameraProductor::Balser| (int)CameraSeries::ACA| (int)CameraInterface::GigE| (int)CameraColour::Grey
+		Camera_Type_Hikvision_XF_GigE_Infrare = (int)CameraProductor::Hikvision | (int)CameraSeries::XF | (int)CameraInterface::GigE | (int)CameraColour::Infrare,
+		Camera_Type_Fotric_IRVision_GigE_Infrera = (int)CameraProductor::Fotric | (int)CameraSeries::IRVision | (int)CameraInterface::GigE | (int)CameraColour::Infrare,
+		Camera_Type_Balser_ACA_GigE_Grey = (int)CameraProductor::Balser | (int)CameraSeries::ACA | (int)CameraInterface::GigE | (int)CameraColour::Grey,
+		Camera_Type_Do3Think_M2s_USB2_Grey = (int)CameraProductor::Do3Think|(int)CameraSeries::M2s|(int)CameraInterface::USB2|(int)CameraColour::Grey,
+		Camera_Type_DaHeng_MER_USB2_RGB =(int)CameraProductor::DaHeng|(int)CameraSeries::MER|(int)CameraInterface::USB2|(int)CameraColour::RGB
+		//TODO:fifth,增加相机的Enum
 	};
 }

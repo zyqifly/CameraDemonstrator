@@ -31,7 +31,8 @@ namespace CameraFactoryNS
 	private:
 		CameraBase* m_Camera;
 	};
-
+	//可以使用此类创建一个指定型号的相机，而不使用上面的类
+	CameraBase* createCameraByType(CameraType type);
 	
 }
 // TODO: 在此处引用程序需要的其他标头。

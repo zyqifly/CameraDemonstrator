@@ -58,11 +58,14 @@ namespace  CameraFactoryNS
 	class CAMERA_FACTORY_API ImageData
 	{
 		ImageVector _data;
+		ImageVector	_data_RGB;
 	public:
 		ImageVector& Data() { return _data; }
+		ImageVector& Data_RGB(){ return	_data_RGB; }
 		ImageData();
 		~ImageData();
-
+		bool	importData_Raw8(char* src, int	width, int height);
+		bool	Raw8ToRGB();
 	private:
 	};
 	/// <summary>
