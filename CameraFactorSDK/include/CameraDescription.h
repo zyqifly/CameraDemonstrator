@@ -72,9 +72,9 @@ namespace  CameraFactoryNS
 	/// 相机描述信息的打印机
 	/// </summary>
 	typedef	EnumMapBase<CameraProductor, std::string>		CameraProductorMap;
-	typedef	EnumMapBase<CameraSeries, std::string>		CameraSeriesMap;
+	typedef	EnumMapBase<CameraSeries, std::string>			CameraSeriesMap;
 	typedef	EnumMapBase<CameraInterface, std::string>		CameraInterfaceMap;
-	typedef	EnumMapBase<CameraColour, std::string>		CameraColourMap;
+	typedef	EnumMapBase<CameraColour, std::string>			CameraColourMap;
 	typedef	EnumMapBase<CameraType, std::string>			CameraTypeMap;
 	class CAMERA_FACTORY_API	AttributeDisplayer
 	{

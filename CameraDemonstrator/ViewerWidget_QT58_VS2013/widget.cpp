@@ -9,7 +9,7 @@ Widget::Widget(QWidget *parent) :
 
     CameraFactoryNS::CameraAttribute    attribute;
     //attribute.setCameraAttribute(CameraFactoryNS::CameraType::Camera_Type_Balser_ACA_GigE_Grey, 1920, 1200, "21783245");
-    attribute.setCameraAttribute(CameraFactoryNS::CameraType::Camera_Type_DaHeng_MER_USB2_GRE, 1920, 1200, "RB0008008012");
+    attribute.setCameraAttribute(CameraFactoryNS::CameraType::Camera_Type_DaHeng_MER_USB2_RGB, 1920, 1200, "RB0008008012");
     _cameraFactory.creatCamera(attribute);
     _cameraFactory.open();
     _refreshPictureTimer.start(1);

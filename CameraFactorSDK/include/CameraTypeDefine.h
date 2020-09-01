@@ -25,7 +25,7 @@ namespace CameraFactoryNS
 		XF = 0x02 << 8,
 		ACA = 0x03 << 8,
 		M2s = 0x04 << 8,
-		MER = 0x05,
+		MER = 0x05 << 8,
 		Check = 0xff << 8
 		//TODO:fourth,增加厂家相机系列的Enum
 	};
@@ -36,7 +36,7 @@ namespace CameraFactoryNS
 		USB3 = 0x02 << 16,
 		GigE = 0x03 << 16,
 		_10GigE = 0x04 << 16,
-		Check = 0xff
+		Check = 0xff << 16
 	};
 	enum class CAMERA_FACTORY_API CameraColour :CameraEnumTypeDefine
 	{
@@ -44,7 +44,7 @@ namespace CameraFactoryNS
 		Grey = 0x01 << 24,
 		RGB = 0x02 << 24,
 		Infrare = 0x03 << 24,
-		Check = 0xff
+		Check = 0xff << 24
 	};
 	/// <summary>
 	/// 制作一个32位的相机具体型号,4字节

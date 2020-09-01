@@ -42,11 +42,11 @@ namespace CameraFactoryNS
 		auto _elem = _data.find(_key);
 		if (_elem != _data.end())
 		{
-			//std::cout << _message + ":" + _elem->second << std::endl;
+			std::cout << _message + ":" + _elem->second << std::endl;
 		}
 		else
 		{
-			//std::cout << _message + ":" + "UNKNOWN" << std::endl;
+			std::cout << _message + ":" + "UNKNOWN" << std::endl;
 		}
 	}
 	template	<class KeyType, class ValueType>
